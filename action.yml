@@ -38,7 +38,7 @@ inputs:
   version:
     description: 'Version of Duplo to use'
     required: true
-    default: 'v1.1.1'
+    default: 'v2.0.1'
 runs:
   using: "composite"
   steps:

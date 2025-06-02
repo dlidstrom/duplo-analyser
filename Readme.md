@@ -20,7 +20,7 @@ Add the following step to your GitHub Actions workflow:
 
 ```yaml
 - name: Run Duplo Analyser
-  uses: dlidstrom/duplo-analyser@v2.0.6
+  uses: dlidstrom/duplo-analyser@v2
   with:
     directory: '.'
     include-pattern: '.*'
@@ -42,7 +42,7 @@ Add the following step to your GitHub Actions workflow:
 | `minimum-line-length` | ✂️ Minimum number of characters per line (shorter lines are ignored) | `3` |
 | `max-files` | 📊 Maximum number of files to report (useful for large duplicate sets) | `100` |
 | `ignore-preprocessor-directives` | 🛑 Removes preprocessor directives before duplicate detection | `true` |
-| `version` | 📌 Version of Duplo to use | `v1.1.1` |
+| `version` | 📌 Version of Duplo to use | `v2.0.1` |
 
 ## 🔄 Example Workflow
 
@@ -60,7 +60,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Duplo Analyser
-        uses: dlidstrom/duplo-analyser@v2.0.6
+        uses: dlidstrom/duplo-analyser@v2
         with: # optionally override the defaults
           directory: '.'
           include-pattern: '.*'
@@ -93,7 +93,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Duplo Analyser
-        uses: dlidstrom/duplo-analyser@v2.0.6
+        uses: dlidstrom/duplo-analyser@v2
         with:
           file-list: 'files.lst'
 ```
