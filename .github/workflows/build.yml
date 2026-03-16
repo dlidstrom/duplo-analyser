@@ -17,7 +17,7 @@ jobs:
         minimum-line-length: ["2", "4"]
     name: Detect duplicates
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 1
       - name: Remove .git folder
@@ -41,7 +41,7 @@ jobs:
     name: From file list
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 1
       - name: Create file list
