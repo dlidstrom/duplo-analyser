@@ -29,7 +29,7 @@ jobs:
         run: |
           rm -rf .git
       - name: Duplo
-        uses: dlidstrom/duplo-action@6a8e972f7d77a86b1ad63c90c55476d5f44ba0b
+        uses: dlidstrom/duplo-action@7246f83846ae02ea45278f72fa5bcbe214780a28
         with:
           include-pattern: ${{ matrix.include-pattern }}
           exclude-pattern: ${{ matrix.exclude-pattern }}
@@ -49,6 +49,6 @@ jobs:
           echo "action.yml" >> files.lst
           echo ".github/workflows/build.yml" >> files.lst
       - name: Duplo
-        uses: dlidstrom/duplo-action@6a8e972f7d77a86b1ad63c90c55476d5f44ba0b
+        uses: dlidstrom/duplo-action@7246f83846ae02ea45278f72fa5bcbe214780a28
         with:
           file-list: files.lst
